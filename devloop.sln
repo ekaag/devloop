@@ -1,13 +1,13 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "devloop.Orchestrator", "devloop.orchestrator\devloop.Orchestrator.csproj", "{75E873BA-7612-4A60-9559-E3C788793F7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "devloop.Orchestrator", "devloop.Orchestrator\devloop.Orchestrator.csproj", "{75E873BA-7612-4A60-9559-E3C788793F7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "devloop.Core", "devloop.core\devloop.Core.csproj", "{0DE61AF2-60E8-442E-ADF8-A60C26C31D04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "devloop.Core", "devloop.Core\devloop.Core.csproj", "{0DE61AF2-60E8-442E-ADF8-A60C26C31D04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "devloop.Tests", "devloop.tests\devloop.Tests.csproj", "{9BF554F5-F2B7-46AC-80A1-5398B83B126A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "devloop.Tests", "devloop.Tests\devloop.Tests.csproj", "{9BF554F5-F2B7-46AC-80A1-5398B83B126A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,3 +32,4 @@ Global
 		{9BF554F5-F2B7-46AC-80A1-5398B83B126A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
+

@@ -1,0 +1,5 @@
+**/bin/
+**/obj/
+.dotnet/
+.devloop/
+dotnet-install.ps1

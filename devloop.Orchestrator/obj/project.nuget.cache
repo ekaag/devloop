@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "7bJXVpqoFZ0B728lWVKQ+pSmqgqSFVp2W/BFCPulP7LIQTgzpLKKORzxraoCBGIQtJWLD1oez1M89lTwfF2rOg==",
+  "dgSpecHash": "DXZRneL8GWc=",
   "success": true,
-  "projectFilePath": "C:\\code\\ekaag\\devloop\\devloop.orchestrator\\devloop.Orchestrator.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\code\\ekaag\\devloop\\devloop.Orchestrator\\devloop.Orchestrator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vnami\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.9\\microsoft.extensions.configuration.abstractions.10.0.9.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.9\\microsoft.extensions.dependencyinjection.abstractions.10.0.9.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\10.0.9\\microsoft.extensions.diagnostics.abstractions.10.0.9.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.9\\microsoft.extensions.fileproviders.abstractions.10.0.9.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\10.0.9\\microsoft.extensions.hosting.abstractions.10.0.9.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.9\\microsoft.extensions.logging.abstractions.10.0.9.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\microsoft.extensions.options\\10.0.9\\microsoft.extensions.options.10.0.9.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.9\\microsoft.extensions.primitives.10.0.9.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\openai\\2.14.0\\openai.2.14.0.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\system.clientmodel\\1.15.0\\system.clientmodel.1.15.0.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\system.memory.data\\10.0.9\\system.memory.data.10.0.9.nupkg.sha512"
+  ],
   "logs": []
 }

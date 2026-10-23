@@ -1,0 +1,16 @@
+{
+  "request": "In the TextTools library (src/TextTools/TextTools.cs), add a public static method TextTools.Slugify(string value) that converts text into a URL slug.",
+  "steps": [
+    "Add Slugify to the existing TextTools class without changing Reverse.",
+    "Add xUnit tests for Slugify to tests/TextTools.Tests.",
+    "Build and test the solution with --no-restore."
+  ],
+  "acceptanceCriteria": [
+    "TextTools.Slugify(\"Hello, World!\") returns \"hello-world\": ASCII letters and digits are lowercased, every run of other characters becomes a single hyphen, and leading and trailing hyphens are removed.",
+    "TextTools.Slugify(null) throws ArgumentNullException, and input with no letters or digits (for example \"  --!! \") returns an empty string.",
+    "New xUnit tests in tests/TextTools.Tests cover every case above, the existing Reverse tests still pass, and dotnet test reports no failures."
+  ],
+  "optionalCriteria": [
+    "Slugify has an XML documentation comment."
+  ]
+}

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fob/taRjkG9qPuGZE1sWEXZTMVAB7p9wxr9jTLvssVay2HytgoojbI8Qk30BThrjte2wq695q0kdCJeepEfIrg==",
+  "dgSpecHash": "CcDU/WzNA4g=",
   "success": true,
-  "projectFilePath": "C:\\code\\ekaag\\devloop\\devloop.core\\devloop.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\code\\ekaag\\devloop\\devloop.Core\\devloop.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vnami\\.nuget\\packages\\openai\\2.14.0\\openai.2.14.0.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\system.clientmodel\\1.15.0\\system.clientmodel.1.15.0.nupkg.sha512",
+    "C:\\Users\\vnami\\.nuget\\packages\\system.memory.data\\10.0.9\\system.memory.data.10.0.9.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,14 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\devloop.core\devloop.Core.csproj" />
+    <ProjectReference Include="..\devloop.Core\devloop.Core.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>d0550115-9c45-4195-b10c-9220a4d8ccfa</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Lets AddUserSecrets(assembly) find the id without an extra package. -->
+    <AssemblyAttribute Include="Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute">
+      <_Parameter1>$(UserSecretsId)</_Parameter1>
+    </AssemblyAttribute>
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 
 </Project>
