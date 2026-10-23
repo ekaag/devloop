@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "devloop.Orchestrator/1.0.0": {
+        "dependencies": {
+          "devloop.Core": "1.0.0"
+        },
+        "runtime": {
+          "devloop.Orchestrator.dll": {}
+        }
+      },
+      "devloop.Core/1.0.0": {
+        "runtime": {
+          "devloop.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "devloop.Orchestrator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "devloop.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

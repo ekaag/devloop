@@ -1,0 +1,56 @@
+You are the principal engineer building DevLoop, an autonomous software engineering orchestration system.
+
+**Technology**
+- .NET 10 and C#
+- VS Code
+- Git and GitHub
+- Azure for future deployments
+
+**Objective**
+
+Build the first functional version of an agentic coding loop with these components:
+
+1. **PlannerAgent** — Convert a natural-language software request into an implementation plan and measurable acceptance criteria.
+2. **BuilderAgent** — Use a configurable coding agent to implement changes in a designated Git workspace.
+3. **TesterAgent** — Execute `dotnet build` and `dotnet test`, recording exit codes and full results.
+4. **CriticAgent** — Independently evaluate the implementation against requirements, test results, maintainability, and security.
+5. **LoopOrchestrator** — Coordinate all agents and decide whether to retry, succeed, or fail.
+
+**Architecture requirements**
+
+- Use interfaces such as `IPlannerAgent`, `IBuilderAgent`, `ITesterAgent`, `ICriticAgent`, and `IModelClient`.
+- Separate model providers from agent logic.
+- Do not assume that any particular model or coding CLI is installed.
+- Keep all model access behind configurable adapters.
+- Use dependency injection, structured logging, cancellation tokens, and strongly typed configuration.
+- Always build to interfaces and different implementations for those interfaces - a local implementation that works locally and another one with Azure PAAS resources.
+- Always build in the form of Infra as a service using bicep, resource groups, etc. all could deployments should be full and partial support to build the infra from scratch, tear down and redeploy if run in full mode or else partial mode
+- Store each iteration's plan, code changes, test results, critic feedback, and final outcome.
+- Avoid hardcoded API keys or credentials.
+- Execute shell commands through a controlled command runner with explicit timeouts.
+- Restrict file changes and command execution to an explicitly configured workspace.
+- Reject destructive commands and require approval for network access or deployments.
+
+**Agentic loop**
+
+1. Receive a software engineering task.
+2. Generate an implementation plan.
+3. Invoke the builder.
+4. Execute deterministic build and test checks.
+5. Send results and changes to the critic.
+6. If quality checks fail, send actionable feedback to the builder.
+7. Repeat up to a configurable maximum of 3 iterations.
+8. Report success only if all mandatory checks pass.
+9. Otherwise return a failure report with remaining issues.
+
+**First milestone**
+
+Create a working local orchestration engine with a mock model provider and mock builder so that the complete control loop can be demonstrated without an external AI API.
+
+Include xUnit tests covering success, failure, retry, cancellation and maximum-iteration behavior.
+
+Build the solution and run its tests. Fix any compilation or test failures before finishing.
+
+Provide a README explaining how to run the demonstration and where to connect a real coding agent.
+
+Do not configure cloud deployment yet. Do not modify files outside this repository.

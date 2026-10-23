@@ -1,0 +1,12 @@
+C:\code\ekaag\devloop\devloop.core\bin\Debug\net8.0\devloop.Core.deps.json
+C:\code\ekaag\devloop\devloop.core\bin\Debug\net8.0\devloop.Core.dll
+C:\code\ekaag\devloop\devloop.core\bin\Debug\net8.0\devloop.Core.pdb
+C:\code\ekaag\devloop\devloop.core\obj\Debug\net8.0\devloop.Core.csproj.AssemblyReference.cache
+C:\code\ekaag\devloop\devloop.core\obj\Debug\net8.0\devloop.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\ekaag\devloop\devloop.core\obj\Debug\net8.0\devloop.Core.AssemblyInfoInputs.cache
+C:\code\ekaag\devloop\devloop.core\obj\Debug\net8.0\devloop.Core.AssemblyInfo.cs
+C:\code\ekaag\devloop\devloop.core\obj\Debug\net8.0\devloop.Core.csproj.CoreCompileInputs.cache
+C:\code\ekaag\devloop\devloop.core\obj\Debug\net8.0\devloop.Core.dll
+C:\code\ekaag\devloop\devloop.core\obj\Debug\net8.0\refint\devloop.Core.dll
+C:\code\ekaag\devloop\devloop.core\obj\Debug\net8.0\devloop.Core.pdb
+C:\code\ekaag\devloop\devloop.core\obj\Debug\net8.0\ref\devloop.Core.dll
