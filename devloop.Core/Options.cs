@@ -25,6 +25,9 @@ public sealed class CodexOptions
     public string Model { get; set; } = "";
     public int TimeoutSeconds { get; set; } = 900;
     public bool IgnoreUserConfig { get; set; } = true;
+    // Codex's Windows sandbox implementation ("elevated" or "unelevated"). Without one, workspace-write degrades
+    // to read-only on Windows. Passed explicitly because IgnoreUserConfig drops ~/.codex/config.toml.
+    public string WindowsSandbox { get; set; } = "elevated";
     public bool RequireCleanWorkspace { get; set; } = true;
     public int MaxOutputChars { get; set; } = 2_000_000;
     // Extra variables forwarded to the Codex process itself, e.g. CODEX_API_KEY. Commands Codex runs
@@ -62,6 +65,7 @@ public static class OptionsValidator
         if (!loop.IsCodexMode) return errors.ToArray();
 
         if (codex.TimeoutSeconds <= 0 || critic.TimeoutSeconds <= 0) errors.Add("Codex and Critic timeouts must be positive.");
+        if (codex.WindowsSandbox is not ("" or "elevated" or "unelevated")) errors.Add("Codex:WindowsSandbox must be elevated, unelevated or empty.");
         var extension = Path.GetExtension(codex.Executable);
         if (string.IsNullOrWhiteSpace(codex.Executable)) errors.Add("Codex:Executable is required.");
         else if (OperatingSystem.IsWindows() && extension is not ("" or ".exe"))

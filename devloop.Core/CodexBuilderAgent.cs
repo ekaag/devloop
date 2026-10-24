@@ -129,6 +129,8 @@ public sealed class CodexBuilderAgent(Workspace workspace, LoopOptions loop, Cod
             "-c", "sandbox_workspace_write.network_access=false",
             "-c", "shell_environment_policy.inherit=\"core\""
         };
+        if (OperatingSystem.IsWindows() && !string.IsNullOrWhiteSpace(options.WindowsSandbox))
+            arguments.AddRange(["-c", $"windows.sandbox=\"{options.WindowsSandbox}\""]);
         if (options.IgnoreUserConfig) arguments.Add("--ignore-user-config");
         if (!string.IsNullOrWhiteSpace(options.Model)) arguments.AddRange(["--model", options.Model]);
         arguments.Add("-"); // Prompt is read from stdin.

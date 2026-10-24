@@ -211,6 +211,7 @@ public sealed class CodexLoopTests
             Assert.Equal("exec", spec.Arguments[0]);
             Assert.Contains("workspace-write", spec.Arguments);
             Assert.Contains("sandbox_workspace_write.network_access=false", spec.Arguments);
+            if (OperatingSystem.IsWindows()) Assert.Contains("windows.sandbox=\"elevated\"", spec.Arguments);
             Assert.DoesNotContain(spec.Arguments, a => a.Contains("danger", StringComparison.OrdinalIgnoreCase) || a == "--add-dir");
             Assert.Equal("-", spec.Arguments[^1]);
             Assert.Equal(h.Root, spec.WorkingDirectory);
